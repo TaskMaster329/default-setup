@@ -2,7 +2,7 @@
 
 set -e
 
-PACKAGES=(sudo htop tree nano)
+PACKAGES=(sudo htop tree nano net-tools)
 
 echo "=== Basic tools installer ==="
 echo ""
