@@ -80,12 +80,12 @@ case "$auth_method" in
 
     echo ""
     echo "Choose authentication method for $new_user:"
-    echo "a) Password"
-    echo "b) SSH Key"
-    read -p "Enter a or b: " new_auth
+    echo "1) Password"
+    echo "2) SSH Key"
+    read -p "Enter 1 or 2: " new_auth
 
     case "$new_auth" in
-      a)
+      1)
         echo "[*] Setting password for $new_user..."
         passwd "$new_user"
 
@@ -97,7 +97,7 @@ case "$auth_method" in
         fi
         ;;
 
-      b)
+      2)
         read -p "Paste the public SSH key for $new_user (e.g., ssh-rsa ...): " pubkey
 
         HOME_DIR=$(eval echo "~$new_user")
