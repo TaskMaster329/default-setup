@@ -2,7 +2,7 @@
 
 set -e
 
-PACKAGES=(sudo htop tree nano net-tools)
+PACKAGES=(sudo htop tree nano net-tools iputils-ping)
 
 echo "=== Basic tools installer ==="
 echo ""
